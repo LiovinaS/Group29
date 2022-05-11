@@ -1,0 +1,4 @@
+   name 	           description
+Test type 	   Тип/вид/уровень тестирования
+Checking 	   Название проверки
+Result 	           Результат
