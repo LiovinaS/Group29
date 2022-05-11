@@ -1,36 +1,52 @@
-1. На локальном репозитории сделать ветки для:
+### 1. На локальном репозитории сделать ветки для:
 
 - Postman  
-git branch Postman
+
+`git branch Postman`
 - Jmeter
- git branch Jmeter
+
+ `git branch Jmeter`
 - CheckLists 
- git branch Checklists
+
+ `git branch Checklists`
 - Bag Reports
- git branch Bag_Reports
+
+`git branch Bag_Reports`
 - SQL
- git branch SQL
+
+ `git branch SQL`
 - Charles
- git branch Charles
+
+`git branch Charles`
 - Mobile testing
- git branch Mobile_Testing
+
+ `git branch Mobile_Testing`
  
  
-2. Запушить все ветки на внешний репозиторий
+### 2. Запушить все ветки на внешний репозиторий
 
-git push -u origin Postman
-git push -u origin Jmeter
-git push -u origin Checklists
-git push -u origin Bag_Reports
-git push -u origin SQL
-git push -u origin Charles
-git push -u origin Mobile_Testing
+`git push -u origin Postman`
 
-3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта
+`git push -u origin Jmeter`
 
-	git checkout Bag_Reports
-	touch BagReports.txt
-	nano BagReports.txt
+`git push -u origin Checklists`
+
+`git push -u origin Bag_Reports`
+
+`git push -u origin SQL`
+
+`git push -u origin Charles`
+
+`git push -u origin Mobile_Testing`
+
+### 3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта
+
+`git checkout Bag_Reports`
+
+`touch BagReports.txt`
+
+`nano BagReports.txt`
+
 
     № 	     name    	           description
 	1 	ID                   Уникальный идентификационный номер
@@ -49,55 +65,67 @@ git push -u origin Mobile_Testing
 	14 	Assigned to 	    Назначение
 	15 	Attachments 	    Логи/скриншоты/видео
 
-	ctrl+X, Y + enter
+`ctrl+X, Y + enter`
 
-4. Запушить структуру багрепорта на внешний репозиторий
+### 4. Запушить структуру багрепорта на внешний репозиторий
 
-git add BagReports.txt
-git commit -m "Add new file BagReports.txt"
-git push
+`git add BagReports.txt`
 
-5. Вмержить ветку Bag Reports в Main
+`git commit -m "Add new file BagReports.txt"`
 
-git checkout main
-git merge Bag_Reports
+`git push`
 
-6. Запушить main на внешний репозиторий.
+### 5. Вмержить ветку Bag Reports в Main
 
- git push
+`git checkout main`
 
-7. В ветке CheckLists набросать структуру чек листа.
+`git merge Bag_Reports`
 
-git checkout Checklists
-touch checklist.txt
-nano checklist.txt
+### 6. Запушить main на внешний репозиторий.
+
+ `git push`
+
+### 7. В ветке CheckLists набросать структуру чек листа.
+
+`git checkout Checklists`
+
+`touch checklist.txt`
+
+`nano checklist.txt`
 
 		name 	           description
 	Test type 	   Тип/вид/уровень тестирования
 	Checking 	   Название проверки
-	Result 	       Результат
+	Result 	           Результат
 
-	ctrl+X, Y + enter
+`ctrl+X, Y + enter`
 
-8. Запушить структуру на внешний репозиторий
+### 8. Запушить структуру на внешний репозиторий
 
-git add checklist.txt
-git commit -m "Add new file checklist.txt"
-git push
+`git add checklist.txt`
 
-9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
+`git commit -m "Add new file checklist.txt"`
 
-Зайти на сайт github
-Выбрать репозиторий Group29
+`git push`
 
-Нажать на кнопку Compare & pull request
-Нажать на кнопку Create pull request
-Нажать на кнопку Merge pull request
-Нажать на кнопку Confirm merge
+### 9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
 
-После слияния веток должно быть указано Pull request successfull merged and closed
+`Зайти на сайт github`
 
-10. Синхронизировать Внешнюю и Локальную ветки Main
+`Выбрать репозиторий Group29`
 
-git checkout main
-git pull
+Нажать на кнопку `Compare & pull request`
+
+Нажать на кнопку `Create pull request`
+
+Нажать на кнопку `Merge pull request`
+
+Нажать на кнопку `Confirm merge'`
+
+После слияния веток должно быть указано `Pull request successfull merged and closed`
+
+### 10. Синхронизировать Внешнюю и Локальную ветки Main
+
+`git checkout main`
+
+`git pull`
